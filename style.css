@@ -1,0 +1,109 @@
+:root {
+  --desktop-width: 1440px;
+  --mobile-width: 375px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  font-family: "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", Meiryo, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.replica {
+  width: 100%;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.frame--desktop {
+  display: block;
+  max-width: var(--desktop-width);
+}
+
+.frame--mobile {
+  display: none;
+  max-width: var(--mobile-width);
+}
+
+.frame__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hotspot {
+  position: absolute;
+  display: block;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.hotspot:focus-visible {
+  outline: 3px solid rgba(255, 0, 133, 0.9);
+  outline-offset: 2px;
+}
+
+.mobile-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: none;
+  gap: 0;
+  justify-content: center;
+  padding-bottom: env(safe-area-inset-bottom);
+  background: #fff;
+  box-shadow: 0 -10px 22px rgba(7, 20, 59, 0.12);
+}
+
+.mobile-sticky__tel,
+.mobile-sticky__web {
+  display: block;
+  height: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mobile-sticky__tel {
+  width: 111px;
+  background:
+    linear-gradient(180deg, #173993, #0c256d);
+}
+
+.mobile-sticky__web {
+  width: 264px;
+  background-image: url("./assets/images/sticky-sp.jpg");
+}
+
+@media (max-width: 820px) {
+  .frame--desktop {
+    display: none;
+  }
+
+  .frame--mobile {
+    display: block;
+  }
+
+  .mobile-sticky {
+    display: flex;
+  }
+}
