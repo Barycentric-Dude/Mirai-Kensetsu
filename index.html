@@ -1,52 +1,441 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ミライ建設ナビ</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <main class="replica">
-      <section class="frame frame--desktop" aria-label="Desktop Figma replica">
-        <img
-          class="frame__image"
-          src="./assets/images/figma-desktop.jpg"
-          alt="ミライ建設ナビ ランディングページ デスクトップデザイン"
-          width="1440"
-          height="15312"
-        />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミライ建設ナビ | 関西限定・施工管理の転職サポート</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">
+                <div class="logo-text">ミライ建設ナビ</div>
+            </div>
+            <div class="header__cta pc-only">
+                <div class="cta-mini">
+                    <span class="cta-mini__badge">月10名限定無料</span>
+                    <span class="cta-mini__text">キャリア相談簡単30秒</span>
+                </div>
+                <a href="#consultation" class="btn btn--white btn--header">WEBで相談してみる</a>
+                <a href="https://line.me" class="btn btn--line btn--header">
+                    <img src="assets/line-icon.png" alt="LINE">
+                    まず、不安を話してみる
+                </a>
+            </div>
+        </div>
+    </header>
 
-        <a class="hotspot" style="left:70.4%;top:0.08%;width:12.8%;height:0.24%;" href="#" aria-label="WEBで相談してみる"></a>
-        <a class="hotspot" style="left:84.0%;top:0.08%;width:14.0%;height:0.24%;" href="#" aria-label="まず、不安を話してみる"></a>
-        <a class="hotspot" style="left:65.6%;top:2.72%;width:26.2%;height:3.68%;" href="#" aria-label="無料相談フォーム"></a>
-        <a class="hotspot" style="left:96.1%;top:4.66%;width:3.9%;height:1.75%;" href="#" aria-label="WEBを相談してみる"></a>
-        <a class="hotspot" style="left:23.0%;top:50.95%;width:54.2%;height:2.95%;" href="#" aria-label="キャリア相談 CTA 1"></a>
-        <a class="hotspot" style="left:23.0%;top:74.38%;width:54.2%;height:2.95%;" href="#" aria-label="キャリア相談 CTA 2"></a>
-        <a class="hotspot" style="left:22.9%;top:94.52%;width:54.4%;height:2.95%;" href="#" aria-label="キャリア相談 CTA 3"></a>
-      </section>
+    <main>
+        <!-- FV Section -->
+        <section id="fv" class="fv">
+            <div class="fv__bg">
+                <!-- Background image will be set in CSS -->
+            </div>
+            <div class="container fv__inner">
+                <div class="fv__content">
+                    <div class="fv__tag">
+                        <span class="fv__tag-inner">関西限定</span>
+                    </div>
+                    <h1 class="fv__title">
+                        <span class="fv__title-sub">施工管理の転職で</span>
+                        <span class="fv__title-main">年収<span class="highlight">120万円</span>アップ</span>
+                    </h1>
+                    <p class="fv__lead">建設業界転職なら、地域密着<br>ミライ建設ナビ</p>
+                    <div class="fv__stats">
+                        <div class="fv__stat">支援実績<br><span class="fv__stat-num">1,200名以上</span></div>
+                    </div>
+                    <div class="fv__features">
+                        <div class="fv__feature">
+                            <div class="star-badge"><span>転勤<br>無し</span></div>
+                        </div>
+                        <div class="fv__feature">
+                            <div class="star-badge"><span>残業<br>少なめ</span></div>
+                        </div>
+                        <div class="fv__feature">
+                            <div class="star-badge"><span>非公開<br>求人多数</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fv__form-preview pc-only">
+                    <!-- Placeholder for the interactive form preview shown in Figma -->
+                    <div class="form-card">
+                        <div class="form-card__header">無料相談はこちらから</div>
+                        <div class="form-card__body">
+                            <p class="form-card__step">STEP1 ご希望の職種を選択</p>
+                            <div class="form-card__options">
+                                <button class="form-card__option">未経験</button>
+                                <button class="form-card__option">建築施工管理</button>
+                                <button class="form-card__option">土木施工管理</button>
+                                <button class="form-card__option">電気施工管理</button>
+                                <button class="form-card__option">管工事施工管理</button>
+                                <button class="form-card__option">その他</button>
+                            </div>
+                            <button class="btn btn--pink btn--full">次へ進む</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section class="frame frame--mobile" aria-label="Mobile Figma replica">
-        <img
-          class="frame__image"
-          src="./assets/images/figma-mobile.jpg"
-          alt="ミライ建設ナビ ランディングページ モバイルデザイン"
-          width="375"
-          height="14689"
-        />
+        <!-- Pain Points Section -->
+        <section id="pain-points" class="pain-points">
+            <div class="container">
+                <h2 class="section-title">今の働き方に<br>こんな悩みありませんか？</h2>
+                <div class="pain-points__list">
+                    <div class="pain-points__item">「出張が多く、残業も多い」</div>
+                    <div class="pain-points__item">「転勤が多く生活が安定しない」</div>
+                    <div class="pain-points__item">「年収がなかなか上がらない」</div>
+                    <div class="pain-points__item">「地元関西で長く働きたいのに転勤がある」</div>
+                </div>
+                <div class="pain-points__message">
+                    <p class="message-bubble">あなたが動けないのは、意志が弱いからじゃない。<br><strong>選択肢が見えていない</strong>だけです。</p>
+                </div>
+            </div>
+        </section>
 
-        <a class="hotspot" style="left:11.5%;top:2.65%;width:77.4%;height:3.2%;" href="#" aria-label="無料相談フォーム"></a>
-        <a class="hotspot" style="left:6.0%;top:51.0%;width:88%;height:2.9%;" href="#" aria-label="キャリア相談 CTA 1"></a>
-        <a class="hotspot" style="left:6.0%;top:74.2%;width:88%;height:2.9%;" href="#" aria-label="キャリア相談 CTA 2"></a>
-        <a class="hotspot" style="left:6.0%;top:94.3%;width:88%;height:2.9%;" href="#" aria-label="キャリア相談 CTA 3"></a>
-      </section>
+        <!-- Recommend Section -->
+        <section id="recommend" class="recommend">
+            <div class="container">
+                <h2 class="section-title">こんな方に<br>おすすめです</h2>
+                <div class="recommend__grid">
+                    <div class="recommend__card">
+                        <div class="recommend__icon"><img src="assets/map-icon.png" alt=""></div>
+                        <p>転勤がある会社は避けたい</p>
+                    </div>
+                    <div class="recommend__card">
+                        <div class="recommend__icon"><img src="assets/eval-icon.png" alt=""></div>
+                        <p>建設業の経験をもっと評価してくれる会社に転職したい</p>
+                    </div>
+                    <div class="recommend__card">
+                        <div class="recommend__icon"><img src="assets/support-icon.png" alt=""></div>
+                        <p>建設業界に強い転職サポートが欲しい</p>
+                    </div>
+                    <div class="recommend__card">
+                        <div class="recommend__icon"><img src="assets/kansai-icon.png" alt=""></div>
+                        <p>地元・関西で長く働きたい</p>
+                    </div>
+                    <div class="recommend__card">
+                        <div class="recommend__icon"><img src="assets/search-icon.png" alt=""></div>
+                        <p>ハローワークや求人サイトでは良い会社が見つからない</p>
+                    </div>
+                    <div class="recommend__card">
+                        <div class="recommend__icon"><img src="assets/challenge-icon.png" alt=""></div>
+                        <p>未経験だけど建設業にチャレンジしたい</p>
+                    </div>
+                </div>
+                <div class="recommend__footer">
+                    <p class="highlight-box">ミライ建設ナビが解決致します</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats">
+            <div class="container">
+                <p class="stats__intro">ミライ建設ナビは、関西の建設業界に特化した<br>人材紹介サービスとして、あなたの転職をサポートします。</p>
+                <div class="stats__grid">
+                    <div class="stats__item">
+                        <div class="award-badge">
+                            <span class="award-badge__label">転職支援実績</span>
+                            <span class="award-badge__num">1200</span>
+                            <span class="award-badge__unit">名以上</span>
+                        </div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="award-badge highlight">
+                            <span class="award-badge__label">平均年収アップ</span>
+                            <span class="award-badge__symbol">+</span>
+                            <span class="award-badge__num">120</span>
+                            <span class="award-badge__unit">万円</span>
+                        </div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="award-badge">
+                            <span class="award-badge__label">年収アップ率</span>
+                            <span class="award-badge__num">78</span>
+                            <span class="award-badge__unit">％</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="stats__message">「入社して終わり」ではありません。<br>長く働いてもらうことが、私たちの目標です。</p>
+            </div>
+        </section>
+
+        <!-- Flow Section -->
+        <section id="flow" class="flow">
+            <div class="container">
+                <h2 class="section-title">無理なく転職できる流れのご紹介</h2>
+                <p class="section-subtitle">焦って決める必要はありません。</p>
+                <div class="flow__steps">
+                    <div class="flow__step">
+                        <div class="flow__icon-wrap">
+                            <img src="assets/flow-icon1.png" alt="">
+                            <span class="flow__num">1</span>
+                        </div>
+                        <p class="flow__text">あなたの状況をヒアリング</p>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__icon-wrap">
+                            <img src="assets/flow-icon2.png" alt="">
+                            <span class="flow__num">2</span>
+                        </div>
+                        <p class="flow__text">合う求人を 厳選して提案</p>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__icon-wrap">
+                            <img src="assets/flow-icon3.png" alt="">
+                            <span class="flow__num">3</span>
+                        </div>
+                        <p class="flow__text">面接準備を 一緒にやる</p>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__icon-wrap">
+                            <img src="assets/flow-icon4.png" alt="">
+                            <span class="flow__num">4</span>
+                        </div>
+                        <p class="flow__text">内定後の 条件確認も同行</p>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__icon-wrap">
+                            <img src="assets/flow-icon5.png" alt="">
+                            <span class="flow__num">5</span>
+                        </div>
+                        <p class="flow__text">入社後も 相談OK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CEO Message -->
+        <section id="ceo-message" class="ceo-message">
+            <div class="container ceo-message__inner">
+                <div class="ceo-message__content">
+                    <h2 class="ceo-message__title">代表メッセージ</h2>
+                    <p class="ceo-message__text">
+                        建設業は、街や社会を支える大切な仕事です。<br>
+                        しかし実際には、転勤や労働環境、条件面などで悩みを抱えながら働いている方も多くいらっしゃいます。<br><br>
+                        ミライ建設ナビは、関西エリアに特化した建設業専門の転職支援サービスとして、「地元で働きたい」「より良い環境で働きたい」そんな想いを持つ方と企業をつなぐサポートを行っています。<br><br>
+                        建設業で働く人が、安心して長く活躍できる環境を見つけられるように。あなたの経験や技術が活かせる職場との出会いを、私たちが全力で支援します。
+                    </p>
+                    <p class="ceo-message__name">ミライ建設ナビ 代表 秦 秀斗</p>
+                </div>
+                <div class="ceo-message__image">
+                    <img src="assets/ceo-photo.png" alt="代表 秦 秀斗">
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section id="case-studies" class="case-studies">
+            <div class="container">
+                <h2 class="section-title">非公開求人一例・転職事例</h2>
+                <p class="section-subtitle">ご紹介できる求人の一部をご紹介します</p>
+                <div class="jobs-grid">
+                    <!-- Job 1 -->
+                    <div class="job-card">
+                        <div class="job-card__header">解体工事施工管理のお仕事</div>
+                        <div class="job-card__body">
+                            <div class="job-card__row">
+                                <span class="label">月収</span>
+                                <span class="value highlight">350,000<span class="unit">円</span></span>
+                            </div>
+                            <hr>
+                            <div class="job-card__row">
+                                <span class="label">勤務地</span>
+                                <span class="value">大阪府（枚方市）</span>
+                            </div>
+                            <div class="job-card__row">
+                                <span class="label">業務内容</span>
+                                <span class="value">施工管理</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job 2 & 3 would follow same pattern -->
+                </div>
+
+                <h3 class="section-subtitle mt-large">転職事例</h3>
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <div class="case-card__image">
+                            <img src="assets/case-photo1.png" alt="">
+                        </div>
+                        <div class="case-card__content">
+                            <p class="case-card__user">M様 45歳</p>
+                            <div class="case-card__job-tag">施工管理</div>
+                            <h4 class="case-card__title">「働きやすい職場でスキルアップ」</h4>
+                            <p class="case-card__text">資格の勉強をしながら働かせてくれる職場に恵まれました。合格したら部長に昇進予定です。貢献したいと思える会社です。</p>
+                        </div>
+                    </div>
+                    <!-- More cases -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-area">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="cta-box__badge">無料！</div>
+                    <p class="cta-box__lead">カンタン30秒<br><span class="highlight">月10名限定</span> キャリア相談</p>
+                    <div class="cta-box__btns">
+                        <a href="#consultation" class="btn btn--white btn--large">WEBで相談してみる <img src="assets/arrow-blue.png" alt=""></a>
+                        <div class="cta-box__line-wrap">
+                            <a href="https://line.me" class="btn btn--line btn--large">
+                                <img src="assets/line-icon.png" alt="">
+                                まず、不安を話してみる
+                                <img src="assets/arrow-white.png" alt="">
+                            </a>
+                            <p class="cta-box__note">（LINE・無料）しつこい営業は一切しません</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison" class="comparison">
+            <div class="container">
+                <h2 class="section-title">ミライ建設ナビと一般的な<br>転職エージェントの比較</h2>
+                <div class="comparison__table-wrap">
+                    <table class="comparison__table">
+                        <thead>
+                            <tr>
+                                <th>比較項目</th>
+                                <th class="highlight">ミライ建設ナビ</th>
+                                <th>一般的なエージェント</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>対応エリア</td>
+                                <td class="highlight">関西特化</td>
+                                <td>全国</td>
+                            </tr>
+                            <tr>
+                                <td>求人内容</td>
+                                <td class="highlight">関西の建設会社中心</td>
+                                <td>全国の求人</td>
+                            </tr>
+                            <tr>
+                                <td>転勤</td>
+                                <td class="highlight">転勤なし求人が多数</td>
+                                <td>転勤あり求人も多い</td>
+                            </tr>
+                            <tr>
+                                <td>求人情報</td>
+                                <td class="highlight">地元企業の情報に強い</td>
+                                <td>大手企業中心</td>
+                            </tr>
+                            <tr>
+                                <td>サポート</td>
+                                <td class="highlight">地域事情を理解したサポート</td>
+                                <td>全国向けの一般サポート</td>
+                            </tr>
+                            <tr>
+                                <td>働き方</td>
+                                <td class="highlight">地元で長く働ける求人</td>
+                                <td>キャリアアップ転職中心</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">よくある「でも・・・」に、正直に答えます。<br>施工管理ってぶっちゃけどうなの？</h2>
+                <div class="faq__list">
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span class="faq__q-icon">Q</span>
+                            体力仕事でしょ？
+                            <span class="faq__toggle">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <span class="faq__a-icon">A</span>
+                            <p>現場作業ではなく、工事の進行を管理する仕事。体よりも頭を使います。</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span class="faq__q-icon">Q</span>
+                            資格がないと無理では？
+                            <span class="faq__toggle">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <span class="faq__a-icon">A</span>
+                            <p>無資格・未経験からでもスタートできる求人が多数あります。入社後に資格取得支援を受けられる企業も多いです。</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span class="faq__q-icon">Q</span>
+                            年収、下がらない？
+                            <span class="faq__toggle">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <span class="faq__a-icon">A</span>
+                            <p>関西の優良企業を厳選しているため、平均して120万円以上の年収アップを実現しています。</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span class="faq__q-icon">Q</span>
+                            ブラック企業を紹介されない？
+                            <span class="faq__toggle">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <span class="faq__a-icon">A</span>
+                            <p>独自の審査基準をクリアした、労働環境の整った企業のみをご紹介しています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Message -->
+        <section class="bottom-message">
+            <div class="container">
+                <p class="bottom-message__text">
+                    まだ迷っていて当然です。<br>
+                    だから、まず話すだけでいい。<br>
+                    無理な転職は勧めません。合わなければ求人は紹介しません。<br>
+                    あなたのペースで、一緒に考えます。
+                </p>
+                <div class="bottom-message__features">
+                    <span>しつこい営業は一切しません</span>
+                    <span>相談だけでもOK</span>
+                    <span>合わない場所は求人紹介しません</span>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <div class="mobile-sticky" aria-label="Mobile sticky CTA">
-      <a class="mobile-sticky__tel" href="tel:06-6961-3344" aria-label="今すぐ電話相談"></a>
-      <a class="mobile-sticky__web" href="#" aria-label="WEBで相談してみる"></a>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <img src="assets/logo.png" alt="ミライ建設ナビ" class="footer__logo">
+            <a href="#" class="footer__link">会社概要</a>
+            <p class="footer__copy">© 2026 ミライ建設ナビ All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div id="floating-cta" class="floating-cta">
+        <div class="floating-cta__inner">
+            <div class="floating-cta__label pc-only">WEBで相談してみる</div>
+            <a href="#consultation" class="floating-cta__btn">
+                <img src="assets/arrow-blue.png" alt="" class="pc-only">
+                <span class="sp-only">WEB相談</span>
+            </a>
+        </div>
     </div>
 
-    <script src="./script.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
