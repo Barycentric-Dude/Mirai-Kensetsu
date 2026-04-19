@@ -846,7 +846,7 @@ a {
 .highlight-word {
     font-size: 50px;
     font-weight: 900;
-    font-family: 'Noto Serif JP', 'Georgia', serif;
+    font-family: 'Noto Sans JP', sans-serif;
     vertical-align: middle;
     line-height: 1;
 }
@@ -901,6 +901,7 @@ a {
 }
 
 .section-title-white {
+    font-family: 'Noto Sans JP', sans-serif;
     color: #fff;
     font-size: 32px;
     font-weight: 700;
@@ -970,6 +971,7 @@ a {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
+    margin-top: 30px;
 }
 
 .solution-banner-worker {
@@ -1198,9 +1200,8 @@ a {
 }
 
 .process-arrow {
-    font-size: 28px;
-    color: #fff;
-    font-weight: 900;
+    width: 32px;
+    height: auto;
     flex-shrink: 0;
     margin-bottom: 60px;
 }
