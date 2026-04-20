@@ -37,6 +37,10 @@ a {
     display: none;
 }
 
+.dv-only {
+    display: inline;
+}
+
 /* Header */
 .header {
     display: flex;
@@ -1809,7 +1813,7 @@ a {
 }
 
 .regional-text {
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 36px;
     font-weight: 700;
     text-align: center;
@@ -1827,7 +1831,7 @@ a {
     position: absolute;
     right: 50px;
     bottom: 0px;
-    width: 400px;
+    width: 375px;
     z-index: 1;
 }
 
@@ -2649,21 +2653,59 @@ a {
         line-height: 1.6;
     }
 
+    /* Goal */
+    .goal {
+        padding: 40px 20px;
+    }
+
+    .goal-text {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .goal-highlight {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
     /* Process */
     .intro-badge {
-        display: block;
-        width: 100%;
-        padding: 10px 16px;
+        display: inline-block;
+        padding: 10px 24px;
+        text-align: center;
+        white-space: normal;
+        line-height: 1.6;
     }
 
     .process-steps {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
 
+    .process-step {
+        gap: 12px;
+    }
+
+    .step-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .step-icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .process-step p {
+        font-size: 18px;
+    }
+
     .process-arrow {
-        transform: rotate(90deg);
-        margin: 10px 0;
+        content: url('assets/images/Vector white.svg');
+        transform: none;
+        margin: 6px 0;
+        width: 24px;
+        height: 24px;
     }
 
     /* Message */
@@ -2699,6 +2741,8 @@ a {
         margin-top: 10px;
         text-align: center;
         white-space: normal;
+        font-size: 16px;
+        letter-spacing: 0.1em;
     }
 
     .message-text {
@@ -2706,7 +2750,9 @@ a {
     }
 
     .message-text p {
-        margin-bottom: 14px;
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 10px;
     }
 
     .message-text p:last-child {
@@ -2714,6 +2760,10 @@ a {
     }
 
     /* Jobs */
+    .jobs-title-sep {
+        display: none;
+    }
+
     .jobs-grid {
         grid-template-columns: 1fr;
     }
@@ -2759,20 +2809,23 @@ a {
 
     .cta-badge-row::before {
         content: '無料！';
-        display: block;
+        display: inline-block;
         background: #FDFA21;
         color: #F50082;
         font-weight: 900;
         font-size: 18px;
         /* border-radius: 30px; */
-        padding: 8px 60px;
+        /* padding-left: 50px; */
+        /* padding-right: 50px; */
+        padding: 6px 60px;
         text-align: center;
+        margin-bottom: 4px;
     }
 
     .cta-text {
         font-size: 36px !important;
         font-weight: 900 !important;
-        color: #fff !important;
+        color: #ffffff !important;
         border-bottom: 5px dashed #FDFA21 !important;
         margin-bottom: 20px !important;
     }
@@ -2804,8 +2857,22 @@ a {
         width: 100%;
         max-width: 360px;
         justify-content: center;
-        font-size: 22px !important;
-        padding: 18px 20px !important;
+        font-size: 18px !important;
+        padding: 16px 20px !important;
+        white-space: nowrap;
+        min-height: unset;
+    }
+
+    .btn-web-large {
+        border: 2px solid #012682 !important;
+        color: #012682 !important;
+        box-shadow: none !important;
+    }
+
+    .cta-note {
+        color: #012682 !important;
+        opacity: 1 !important;
+        font-size: 13px !important;
     }
 
     /* Reasons */
@@ -2845,7 +2912,16 @@ a {
 
     /* FAQ */
     .faq-banner {
-        padding: 40px 5px;
+        padding: 30px 10px;
+    }
+
+    .faq-banner-sub {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .faq-banner-title {
+        font-size: 22px;
     }
 
     .faq-subtitle {
@@ -2928,7 +3004,7 @@ a {
     }
 
     .footer-logo-mobile {
-        display: block !important;
+        display: none !important;
     }
 
     .footer-link {
@@ -2947,6 +3023,35 @@ a {
         display: block !important;
         position: relative;
         z-index: 10;
+    }
+
+    .regional {
+        padding: 40px 0 0 0;
+        min-height: 260px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .regional .container {
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .regional-text {
+        color: black;
+        font-size: 18px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 100px;
+        margin-bottom: 10px;
+    }
+
+    .regional-image {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -25%;
+        width: 163px;
     }
 }
 
@@ -2983,6 +3088,10 @@ a {
 
     .sp-only {
         display: inline;
+    }
+
+    .dv-only {
+        display: none;
     }
 
     .pain-message .highlight-red {
