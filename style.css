@@ -33,6 +33,10 @@ a {
     padding: 0 20px;
 }
 
+.sp-only {
+    display: none;
+}
+
 /* Header */
 .header {
     display: flex;
@@ -792,10 +796,12 @@ a {
 }
 
 .pain-message-area .pain-message p:first-child {
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 700;
     color: #012682;
     margin-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .pain-message-area .highlight-red {
@@ -2508,10 +2514,14 @@ a {
 
     /* Recommend */
     .section-title-white {
-        color: #012682;
+        color: #ffffff;
         text-align: left !important;
-        padding-left: 25%;
-        padding-right: 25%;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+
+    .recommend-worker {
+        width: 177px !important;
     }
 
     .recommend-grid {
@@ -2628,6 +2638,15 @@ a {
     .stats-intro {
         text-align: center;
         padding: 0 16px;
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .stats-intro-bold {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.6;
     }
 
     /* Process */
@@ -2954,10 +2973,29 @@ a {
 
     .pain-message {
         font-size: 18px;
+        text-align: center;
+    }
+
+    .pain-message p:first-child {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .sp-only {
+        display: inline;
     }
 
     .pain-message .highlight-red {
+        font-size: 32px;
+        display: block;
+    }
+
+    .pain-message .highlight-red span {
+        display: block;
         font-size: 22px;
+        color: #012682;
+        font-weight: 700;
+        margin-top: 4px;
     }
 
     .cta-highlight {
